@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "3a4c8d91-8dac-45db-ae70-3fb1ed3e7d7e",
+		"name": "H_M_S",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27415945"
+	},
+	"item": [
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "Get All Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "localhost:8080/api/v1/Doctors"
+					},
+					"response": []
+				},
+				{
+					"name": "GET By id Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Doctors/1"
+					},
+					"response": []
+				},
+				{
+					"name": "add Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"doctorName\": \"mohammad\",\r\n        \"doctorage\": \"62\",\r\n        \"doctoraddress\": \"Rammallh\",\r\n        \"doctorspecialization\": \"eyes\",\r\n        \"doctorsphone\": \"0569623530\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Doctors"
+					},
+					"response": []
+				},
+				{
+					"name": "update Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"doctorName\": \"mohammad Khaled\",\r\n        \"doctorage\": \"62\",\r\n        \"doctoraddress\": \"Rammallh\",\r\n        \"doctorspecialization\": \"eyes\",\r\n        \"doctorsphone\": \"0569623530\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Doctors/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/Doctors/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nurse",
+			"item": [
+				{
+					"name": "GET All Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Nurse"
+					},
+					"response": []
+				},
+				{
+					"name": "GET By ID Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Nurse/1"
+					},
+					"response": []
+				},
+				{
+					"name": "add Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nurseName\": \"mo kh\",\r\n    \"nurseage\": \"62\",\r\n    \"nurseaddress\": \"Rammallh\",\r\n    \"nursespecialization\": \"heart\",\r\n    \"nursephone\": \"234342234423\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Nurse"
+					},
+					"response": []
+				},
+				{
+					"name": "update Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nurseName\": \"mohammad kh\",\r\n    \"nurseage\": \"62\",\r\n    \"nurseaddress\": \"Rammallh\",\r\n    \"nursespecialization\": \"heart\",\r\n    \"nursephone\": \"234342234423\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Nurse/4"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/Nurse/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "Get all Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Patients"
+					},
+					"response": []
+				},
+				{
+					"name": "get by id Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Patients/1"
+					},
+					"response": []
+				},
+				{
+					"name": "add Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"mo kh\",\r\n    \"patientage\": \"32\",\r\n    \"patientaddress\": \"qubia\",\r\n    \"patientGender\": \"M\",\r\n    \"patientphone\": \"5655555\",\r\n    \"patientIdDoctor\": 2,\r\n    \"patientIdNurse\": 2,\r\n    \"patientIdRoomNumber\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Patients"
+					},
+					"response": []
+				},
+				{
+					"name": "update Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"mohammad kh\",\r\n    \"patientage\": \"32\",\r\n    \"patientaddress\": \"qubia\",\r\n    \"patientGender\": \"M\",\r\n    \"patientphone\": \"5655555\",\r\n    \"patientIdDoctor\": 2,\r\n    \"patientIdNurse\": 2,\r\n    \"patientIdRoomNumber\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Patients/5"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/Patients/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "get all Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/PatientRoom"
+					},
+					"response": []
+				},
+				{
+					"name": "get by id Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/PatientRoom/1"
+					},
+					"response": []
+				},
+				{
+					"name": "add Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transferNo\": \"4444\",\r\n    \"roomName\": \"m2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/PatientRoom"
+					},
+					"response": []
+				},
+				{
+					"name": "update Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transferNo\": \"4444\",\r\n    \"roomName\": \"m222222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/PatientRoom/6"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/PatientRoom/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicine",
+			"item": [
+				{
+					"name": "get All Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Medicine"
+					},
+					"response": []
+				},
+				{
+					"name": "get by id Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/Medicine/1"
+					},
+					"response": []
+				},
+				{
+					"name": "add Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dud\",\r\n    \"count\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Medicine"
+					},
+					"response": []
+				},
+				{
+					"name": "up date Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dudrex\",\r\n    \"count\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/Medicine/5"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/Medicine/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MedicineAndPatient",
+			"item": [
+				{
+					"name": "get all Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/MedicineAndPatient"
+					},
+					"response": []
+				},
+				{
+					"name": "get by id Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/v1/MedicineAndPatient/1"
+					},
+					"response": []
+				},
+				{
+					"name": "add Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMedicine\":4,\r\n    \"idPatient\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/MedicineAndPatient"
+					},
+					"response": []
+				},
+				{
+					"name": "update  Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMedicine\": 3,\r\n    \"idPatient\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/v1/MedicineAndPatient/11"
+					},
+					"response": []
+				},
+				{
+					"name": "delete  Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/v1/MedicineAndPatient/4"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
